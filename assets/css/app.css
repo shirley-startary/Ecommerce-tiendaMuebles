@@ -1,30 +1,47 @@
 html {
   box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
-  margin: 0;
-  padding: 0;
 }
 
 /* Globales */
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
 a {
   text-decoration: none;
   color: #000;
 }
 
 .contenedor {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 /** Header y Navegación **/
 
 .nombre-sitio {
-  margin-top: 50 px;
-  margin-bottom: 50px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   text-align: center;
+  font-size: 4rem;
 }
 
 .nombre-sitio span {
@@ -32,11 +49,11 @@ a {
 }
 
 .contenedor-navegacion {
-  border-top: 1px solid #e1e1e1;
+  border-top: .1rem solid #e1e1e1;
 }
 
 .nav-principal {
-  padding: 20px 0;
+  padding: 2rem 0;
   display: flex;
   justify-content: space-between;
 }
@@ -45,5 +62,30 @@ a {
   background-image: url(../img/principal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
+  height: 55rem;
+}
+
+/** Categorias **/
+
+.categorias h2 {
+  text-align: center;
+}
+
+.categoria a {
+  text-align: center;
+  display: block;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.categoria a:hover {
+  background-color: #037bc0;
+  color: #fff;
+  border-bottom-right-radius: 1rem;
+}
+
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
