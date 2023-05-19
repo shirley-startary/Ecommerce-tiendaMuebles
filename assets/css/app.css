@@ -106,7 +106,16 @@ img {
 .nav-principal {
   padding: 2rem 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /* text-align: center; */
+  align-items: center;
+}
+
+@media(min-width: 768px ){
+  .nav-principal {
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }
 
 .hero {
