@@ -6,6 +6,9 @@ Este es el primer proyecto de una guía de varios proyectos.
 
 Estas son las capturas de pantalla del proyecto completo
 
+Tu puedes ver el proyecto en el siguiente link
+[https://voluble-lokum-5e4dae.netlify.app/](https://voluble-lokum-5e4dae.netlify.app/)
+
 ## Home
 ---
 ![Index.html](assets/Img-pages/index.png)
